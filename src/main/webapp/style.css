@@ -1,0 +1,90 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* Author: Merad Fouad
+*/
+
+/* Global Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Light grey background */
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+/* Calculator Container Styling */
+#calculator {
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 1.5em;
+    /* Dark green color */
+    color: #4CAF50;
+    text-align: center;
+    margin-top: 0;
+}
+
+/* Display Input Field Styling */
+#resultDisplay {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    text-align: right;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+/* Buttons Layout (Grid) */
+.buttons-grid {
+    /* Uses CSS Grid for precise 4-column layout */
+    display: grid;
+    /* Creates 4 columns of equal fractional width (1fr) */
+    grid-template-columns: repeat(4, 1fr);
+    /* Spacing between grid items */
+    gap: 10px;
+}
+
+/* General Button Styling */
+button {
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Light Green button color */
+    background-color: #8BC34A;
+    color: white;
+    transition: background-color 0.1s;
+}
+
+/* Button Hover Effect */
+button:hover {
+    /* Darker green on hover */
+    background-color: #7CB342;
+}
+
+/* Styling for Operator, Control, and Equal Buttons (Darker Green) */
+.operator, .control, .equal {
+    /* Standard darker green for key functions */
+    background-color: #4CAF50;
+}
+
+/* Specific Styling for Control Button (C) */
+.control {
+    /* Orange color for Clear button */
+    background-color: #FF9800;
+}
